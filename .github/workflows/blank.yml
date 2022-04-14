@@ -17,7 +17,7 @@ on:
 
 env:
   MY_VAR: ${{ secrets.MY_VAR }}
-  ENV_MAIN_SECRET: ${{ secrets.ENV_MAIN_SECRET }}
+  ENV_MAIN_SECRET: '${{ secrets.ENV_MAIN_SECRET }}'
 
 jobs:
   # This workflow contains a single job called "build"
@@ -37,4 +37,3 @@ jobs:
           echo test, and deploy your project.
           echo $MY_VAR
           echo $ENV_MAIN_SECRET
-
