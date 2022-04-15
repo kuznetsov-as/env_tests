@@ -39,7 +39,7 @@ jobs:
 
       - name: Main branch ?
         if: env.MY_VAR == 'main'
-        run: echo env.MY_VAR
+        run: echo $env.MY_VAR
 
       - name: Dev branch ?
         if: env.MY_VAR == 'dev'
