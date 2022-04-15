@@ -32,9 +32,7 @@ jobs:
       
       - name: condition 1
         if: github.ref == 'refs/heads/main'
-        env: 
-          MY_VAR: ${{ secrets.ENV_MAIN }}
-        run: echo "$MY_VAR" >> "$GITHUB_ENV"
+        run: echo ${{ secrets.ENV_MAIN }} >> "$GITHUB_ENV"
       
       - name: condition 2
         if: github.ref == 'refs/heads/dev'
