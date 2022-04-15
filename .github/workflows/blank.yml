@@ -40,7 +40,7 @@ jobs:
       - name: Main branch ?
         if: env.MY_VAR == 'main'
         run: echo "MY_VAR is MaiN"
-        
+
       - name: Dev branch ?
         if: env.MY_VAR == 'dev'
         run: echo "MY_VAR is DeV"
