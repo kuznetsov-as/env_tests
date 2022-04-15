@@ -47,4 +47,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo $MY_VAR
+          #echo $MY_VAR
+          echo env.MY_VAR
+          
